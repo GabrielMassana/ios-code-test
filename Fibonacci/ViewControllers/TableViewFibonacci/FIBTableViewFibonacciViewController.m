@@ -92,6 +92,7 @@
                                                                                   managedObjectContext:[CDFCoreDataManager sharedInstance].managedObjectContext
                                                                                     sectionNameKeyPath:nil
                                                                                              cacheName:nil];
+        
         _fetchedResultsController.frcDelegate = self;
         _fetchedResultsController.tableView = self.tableView;
         _fetchedResultsController.updateRowAnimation = UITableViewRowAnimationNone;

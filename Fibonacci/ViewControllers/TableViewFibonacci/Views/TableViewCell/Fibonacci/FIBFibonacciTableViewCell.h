@@ -12,6 +12,11 @@
 
 @interface FIBFibonacciTableViewCell : FIBTableViewCell
 
+/**
+ Updates the cell with the givem fibonacci object.
+ 
+ @param fibonacci - the fibonacci object to update the cell.
+ */
 - (void)updateCellWithFibonacci:(FIBFibonacci *)fibonacci;
 
 @end

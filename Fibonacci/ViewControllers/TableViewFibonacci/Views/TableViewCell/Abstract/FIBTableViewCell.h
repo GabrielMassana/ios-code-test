@@ -10,8 +10,14 @@
 
 @interface FIBTableViewCell : UITableViewCell
 
+/**
+ The identifier to reuse the cell.
+ */
 + (NSString *)reuseIdentifier;
 
+/**
+ Autolayout methods for the cell.
+ */
 - (void)layoutByApplyingConstraints;
 
 @end
