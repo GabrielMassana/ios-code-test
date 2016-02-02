@@ -13,6 +13,8 @@
 
 #import "FIBFibonacci.h"
 #import "FIBFibonacciTableViewCell.h"
+#import "FIBCalculateFibonacciSequenceOperation.h"
+#import "FIBAppDelegate.h"
 
 @interface FIBTableViewFibonacciViewController () <UITableViewDataSource, UITableViewDelegate, CDFTableViewFetchedResultsControllerDelegate>
 
@@ -108,7 +110,15 @@
 {
     if (self.fetchedResultsController.fetchedObjects.count == 0)
     {
-        //Operation to calculate Fibonacci sequence
+        FIBCalculateFibonacciSequenceOperation *operation = [[FIBCalculateFibonacciSequenceOperation alloc] init];
+        operation.operationQueueIdentifier = kFIBLocalOperationQueueTypeIdentifier;
+
+        operation.onSuccess = ^(id result)
+        {
+            NSLog(@"%@", result);
+        };
+        
+        [[COMOperationQueueManager sharedInstance] addOperation:operation];
     }
 }
 

@@ -18,6 +18,7 @@
 		7A3BED571C61546700DAC96D /* FIBFibonacci+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3BED551C61546700DAC96D /* FIBFibonacci+CoreDataProperties.m */; };
 		7A3BED5C1C61553100DAC96D /* FIBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3BED5B1C61553100DAC96D /* FIBTableViewCell.m */; };
 		7A3BED5F1C61554800DAC96D /* FIBFibonacciTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3BED5E1C61554800DAC96D /* FIBFibonacciTableViewCell.m */; };
+		7A3BED621C615B1F00DAC96D /* FIBCalculateFibonacciSequenceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3BED611C615B1F00DAC96D /* FIBCalculateFibonacciSequenceOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		7A3BED5B1C61553100DAC96D /* FIBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIBTableViewCell.m; sourceTree = "<group>"; };
 		7A3BED5D1C61554800DAC96D /* FIBFibonacciTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIBFibonacciTableViewCell.h; sourceTree = "<group>"; };
 		7A3BED5E1C61554800DAC96D /* FIBFibonacciTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIBFibonacciTableViewCell.m; sourceTree = "<group>"; };
+		7A3BED601C615B1F00DAC96D /* FIBCalculateFibonacciSequenceOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIBCalculateFibonacciSequenceOperation.h; sourceTree = "<group>"; };
+		7A3BED611C615B1F00DAC96D /* FIBCalculateFibonacciSequenceOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIBCalculateFibonacciSequenceOperation.m; sourceTree = "<group>"; };
 		80A0833919637710E82A001E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,6 +228,8 @@
 		7A3BED4E1C6151B400DAC96D /* Operation */ = {
 			isa = PBXGroup;
 			children = (
+				7A3BED601C615B1F00DAC96D /* FIBCalculateFibonacciSequenceOperation.h */,
+				7A3BED611C615B1F00DAC96D /* FIBCalculateFibonacciSequenceOperation.m */,
 			);
 			path = Operation;
 			sourceTree = "<group>";
@@ -425,6 +430,7 @@
 				7A3BED5F1C61554800DAC96D /* FIBFibonacciTableViewCell.m in Sources */,
 				7A3BED571C61546700DAC96D /* FIBFibonacci+CoreDataProperties.m in Sources */,
 				7A3BED5C1C61553100DAC96D /* FIBTableViewCell.m in Sources */,
+				7A3BED621C615B1F00DAC96D /* FIBCalculateFibonacciSequenceOperation.m in Sources */,
 				7A35F8861C614F72009C7732 /* fibonacci.xcdatamodeld in Sources */,
 				7A3BED4F1C6151B400DAC96D /* FIBTableViewFibonacciViewController.m in Sources */,
 				7A35F8821C614ACC009C7732 /* main.m in Sources */,

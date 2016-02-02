@@ -27,6 +27,10 @@ NSString *const kFIBLocalOperationQueueTypeIdentifier = @"kFIBLocalOperationQueu
 
     /*-------------------*/
 
+    [self registerOperationQueues];
+    
+    /*-------------------*/
+
     self.window.backgroundColor = [UIColor clearColor];
     self.window.clipsToBounds = NO;
     
