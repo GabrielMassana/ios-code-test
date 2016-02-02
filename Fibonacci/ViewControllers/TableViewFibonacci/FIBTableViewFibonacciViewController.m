@@ -41,6 +41,11 @@
  */
 - (void)registerCells;
 
+/**
+ Request new data.
+ */
+- (void)refresh;
+
 @end
 
 @implementation FIBTableViewFibonacciViewController
@@ -57,6 +62,8 @@
 
     [self registerCells];
     
+    [self refresh];
+
     [self updateViewConstraints];
 }
 
@@ -93,6 +100,16 @@
 {
     [self.tableView registerClass:[FIBFibonacciTableViewCell class]
            forCellReuseIdentifier:[FIBFibonacciTableViewCell reuseIdentifier]];
+}
+
+#pragma mark - Refresh
+
+- (void)refresh
+{
+    if (self.fetchedResultsController.fetchedObjects.count == 0)
+    {
+        //Operation to calculate Fibonacci sequence
+    }
 }
 
 #pragma mark - FetchResultsController
