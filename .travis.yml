@@ -1,6 +1,7 @@
 language: objective-c
    
-begore_install:
+before_install:
     - gem install cocoapods -v '0.39.0'   
+    
 script: 
    xctool -project Fibonacci.xcodeproj -scheme Fibonacci build -sdk iphonesimulator
