@@ -1,0 +1,4 @@
+language: objective-c
+   
+script: 
+   xctool -project Fibonacci.xcodeproj -scheme Fibonacci build -sdk iphonesimulator
