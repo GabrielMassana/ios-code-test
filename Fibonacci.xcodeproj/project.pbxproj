@@ -14,6 +14,10 @@
 		7A35F8821C614ACC009C7732 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A35F87B1C614ACC009C7732 /* main.m */; };
 		7A35F8861C614F72009C7732 /* fibonacci.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A35F8841C614F72009C7732 /* fibonacci.xcdatamodeld */; };
 		7A3BED4F1C6151B400DAC96D /* FIBTableViewFibonacciViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3BED4D1C6151B400DAC96D /* FIBTableViewFibonacciViewController.m */; };
+		7A3BED561C61546700DAC96D /* FIBFibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3BED531C61546700DAC96D /* FIBFibonacci.m */; };
+		7A3BED571C61546700DAC96D /* FIBFibonacci+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3BED551C61546700DAC96D /* FIBFibonacci+CoreDataProperties.m */; };
+		7A3BED5C1C61553100DAC96D /* FIBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3BED5B1C61553100DAC96D /* FIBTableViewCell.m */; };
+		7A3BED5F1C61554800DAC96D /* FIBFibonacciTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3BED5E1C61554800DAC96D /* FIBFibonacciTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,14 @@
 		7A35F8851C614F72009C7732 /* fibonacci.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fibonacci.xcdatamodel; sourceTree = "<group>"; };
 		7A3BED4C1C6151B400DAC96D /* FIBTableViewFibonacciViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIBTableViewFibonacciViewController.h; sourceTree = "<group>"; };
 		7A3BED4D1C6151B400DAC96D /* FIBTableViewFibonacciViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIBTableViewFibonacciViewController.m; sourceTree = "<group>"; };
+		7A3BED521C61546700DAC96D /* FIBFibonacci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIBFibonacci.h; sourceTree = "<group>"; };
+		7A3BED531C61546700DAC96D /* FIBFibonacci.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIBFibonacci.m; sourceTree = "<group>"; };
+		7A3BED541C61546700DAC96D /* FIBFibonacci+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FIBFibonacci+CoreDataProperties.h"; sourceTree = "<group>"; };
+		7A3BED551C61546700DAC96D /* FIBFibonacci+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FIBFibonacci+CoreDataProperties.m"; sourceTree = "<group>"; };
+		7A3BED5A1C61553100DAC96D /* FIBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIBTableViewCell.h; sourceTree = "<group>"; };
+		7A3BED5B1C61553100DAC96D /* FIBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIBTableViewCell.m; sourceTree = "<group>"; };
+		7A3BED5D1C61554800DAC96D /* FIBFibonacciTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIBFibonacciTableViewCell.h; sourceTree = "<group>"; };
+		7A3BED5E1C61554800DAC96D /* FIBFibonacciTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIBFibonacciTableViewCell.m; sourceTree = "<group>"; };
 		80A0833919637710E82A001E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +154,10 @@
 		7A35F8731C614ACC009C7732 /* ManagedObjects */ = {
 			isa = PBXGroup;
 			children = (
+				7A3BED521C61546700DAC96D /* FIBFibonacci.h */,
+				7A3BED531C61546700DAC96D /* FIBFibonacci.m */,
+				7A3BED541C61546700DAC96D /* FIBFibonacci+CoreDataProperties.h */,
+				7A3BED551C61546700DAC96D /* FIBFibonacci+CoreDataProperties.m */,
 			);
 			path = ManagedObjects;
 			sourceTree = "<group>";
@@ -201,6 +217,7 @@
 				7A3BED4C1C6151B400DAC96D /* FIBTableViewFibonacciViewController.h */,
 				7A3BED4D1C6151B400DAC96D /* FIBTableViewFibonacciViewController.m */,
 				7A3BED4E1C6151B400DAC96D /* Operation */,
+				7A3BED501C61522800DAC96D /* Views */,
 			);
 			path = TableViewFibonacci;
 			sourceTree = "<group>";
@@ -210,6 +227,41 @@
 			children = (
 			);
 			path = Operation;
+			sourceTree = "<group>";
+		};
+		7A3BED501C61522800DAC96D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A3BED511C61522800DAC96D /* TableViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7A3BED511C61522800DAC96D /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7A3BED581C61551900DAC96D /* Abstract */,
+				7A3BED591C61551900DAC96D /* Fibonacci */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		7A3BED581C61551900DAC96D /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				7A3BED5A1C61553100DAC96D /* FIBTableViewCell.h */,
+				7A3BED5B1C61553100DAC96D /* FIBTableViewCell.m */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		7A3BED591C61551900DAC96D /* Fibonacci */ = {
+			isa = PBXGroup;
+			children = (
+				7A3BED5D1C61554800DAC96D /* FIBFibonacciTableViewCell.h */,
+				7A3BED5E1C61554800DAC96D /* FIBFibonacciTableViewCell.m */,
+			);
+			path = Fibonacci;
 			sourceTree = "<group>";
 		};
 		CCAB40E29A35B6C1DA37B396 /* Frameworks */ = {
@@ -370,10 +422,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A3BED5F1C61554800DAC96D /* FIBFibonacciTableViewCell.m in Sources */,
+				7A3BED571C61546700DAC96D /* FIBFibonacci+CoreDataProperties.m in Sources */,
+				7A3BED5C1C61553100DAC96D /* FIBTableViewCell.m in Sources */,
 				7A35F8861C614F72009C7732 /* fibonacci.xcdatamodeld in Sources */,
 				7A3BED4F1C6151B400DAC96D /* FIBTableViewFibonacciViewController.m in Sources */,
 				7A35F8821C614ACC009C7732 /* main.m in Sources */,
 				7A35F87F1C614ACC009C7732 /* FIBAppDelegate.m in Sources */,
+				7A3BED561C61546700DAC96D /* FIBFibonacci.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
