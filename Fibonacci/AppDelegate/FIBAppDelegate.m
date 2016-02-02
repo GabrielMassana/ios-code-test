@@ -8,9 +8,14 @@
 
 #import "FIBAppDelegate.h"
 
+#import <CoreDataFullStack/CoreDataFullStack.h>
+#import <CoreOperation/CoreOperation.h>
+
 #import "FIBTableViewFibonacciViewController.h"
 
-@interface FIBAppDelegate ()
+NSString *const kFIBLocalOperationQueueTypeIdentifier = @"kFIBLocalOperationQueueTypeIdentifier";
+
+@interface FIBAppDelegate () <CDFCoreDataManagerDelegate>
 
 @end
 
@@ -18,6 +23,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [CDFCoreDataManager sharedInstance].delegate = self;
+
     /*-------------------*/
 
     self.window.backgroundColor = [UIColor clearColor];
@@ -40,6 +47,26 @@
     }
     
     return _window;
+}
+
+#pragma mark - CDFCoreDataManagerDelegate
+
+- (NSString *)coreDataModelName
+{
+    return @"fibonacci";
+}
+
+#pragma mark - OperationQueues
+
+- (void)registerOperationQueues
+{
+    //Local Background Operation Queue
+    NSOperationQueue *localDataOperationQueue = [[NSOperationQueue alloc] init];
+    localDataOperationQueue.qualityOfService = NSQualityOfServiceUserInteractive;
+    localDataOperationQueue.maxConcurrentOperationCount = NSOperationQueueDefaultMaxConcurrentOperationCount;
+    
+    [[COMOperationQueueManager sharedInstance] registerOperationQueue:localDataOperationQueue
+                                             operationQueueIdentifier:kFIBLocalOperationQueueTypeIdentifier];
 }
 
 @end
