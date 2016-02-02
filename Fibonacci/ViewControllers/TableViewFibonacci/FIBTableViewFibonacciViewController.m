@@ -36,6 +36,11 @@
  */
 @property (nonatomic, strong) NSFetchRequest *fetchRequest;
 
+/**
+ Register cell classes to be used on the table view.
+ */
+- (void)registerCells;
+
 @end
 
 @implementation FIBTableViewFibonacciViewController
@@ -50,7 +55,7 @@
 
     [self.view addSubview:self.tableView];
 
-    
+    [self registerCells];
     
     [self updateViewConstraints];
 }
@@ -80,6 +85,14 @@
     /*----------------*/
     
     [self.tableView autoPinEdgesToSuperviewEdges];
+}
+
+#pragma mark - RegisterCells
+
+- (void)registerCells
+{
+    [self.tableView registerClass:[FIBFibonacciTableViewCell class]
+           forCellReuseIdentifier:[FIBFibonacciTableViewCell reuseIdentifier]];
 }
 
 #pragma mark - FetchResultsController
