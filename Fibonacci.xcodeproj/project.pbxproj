@@ -12,8 +12,8 @@
 		7A35F87F1C614ACC009C7732 /* FIBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A35F8701C614ACC009C7732 /* FIBAppDelegate.m */; };
 		7A35F8801C614ACC009C7732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A35F8771C614ACC009C7732 /* Assets.xcassets */; };
 		7A35F8821C614ACC009C7732 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A35F87B1C614ACC009C7732 /* main.m */; };
-		7A35F8831C614ACC009C7732 /* FIBTableViewFibonacciViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A35F87E1C614ACC009C7732 /* FIBTableViewFibonacciViewController.m */; };
 		7A35F8861C614F72009C7732 /* fibonacci.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A35F8841C614F72009C7732 /* fibonacci.xcdatamodeld */; };
+		7A3BED4F1C6151B400DAC96D /* FIBTableViewFibonacciViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3BED4D1C6151B400DAC96D /* FIBTableViewFibonacciViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +38,9 @@
 		7A35F8771C614ACC009C7732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A35F87A1C614ACC009C7732 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A35F87B1C614ACC009C7732 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7A35F87D1C614ACC009C7732 /* FIBTableViewFibonacciViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIBTableViewFibonacciViewController.h; sourceTree = "<group>"; };
-		7A35F87E1C614ACC009C7732 /* FIBTableViewFibonacciViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIBTableViewFibonacciViewController.m; sourceTree = "<group>"; };
 		7A35F8851C614F72009C7732 /* fibonacci.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fibonacci.xcdatamodel; sourceTree = "<group>"; };
+		7A3BED4C1C6151B400DAC96D /* FIBTableViewFibonacciViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIBTableViewFibonacciViewController.h; sourceTree = "<group>"; };
+		7A3BED4D1C6151B400DAC96D /* FIBTableViewFibonacciViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIBTableViewFibonacciViewController.m; sourceTree = "<group>"; };
 		80A0833919637710E82A001E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,10 +190,26 @@
 		7A35F87C1C614ACC009C7732 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7A35F87D1C614ACC009C7732 /* FIBTableViewFibonacciViewController.h */,
-				7A35F87E1C614ACC009C7732 /* FIBTableViewFibonacciViewController.m */,
+				7A3BED4B1C6151B400DAC96D /* TableViewFibonacci */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7A3BED4B1C6151B400DAC96D /* TableViewFibonacci */ = {
+			isa = PBXGroup;
+			children = (
+				7A3BED4C1C6151B400DAC96D /* FIBTableViewFibonacciViewController.h */,
+				7A3BED4D1C6151B400DAC96D /* FIBTableViewFibonacciViewController.m */,
+				7A3BED4E1C6151B400DAC96D /* Operation */,
+			);
+			path = TableViewFibonacci;
+			sourceTree = "<group>";
+		};
+		7A3BED4E1C6151B400DAC96D /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Operation;
 			sourceTree = "<group>";
 		};
 		CCAB40E29A35B6C1DA37B396 /* Frameworks */ = {
@@ -355,7 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A35F8861C614F72009C7732 /* fibonacci.xcdatamodeld in Sources */,
-				7A35F8831C614ACC009C7732 /* FIBTableViewFibonacciViewController.m in Sources */,
+				7A3BED4F1C6151B400DAC96D /* FIBTableViewFibonacciViewController.m in Sources */,
 				7A35F8821C614ACC009C7732 /* main.m in Sources */,
 				7A35F87F1C614ACC009C7732 /* FIBAppDelegate.m in Sources */,
 			);
