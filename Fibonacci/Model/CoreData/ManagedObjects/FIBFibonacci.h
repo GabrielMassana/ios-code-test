@@ -13,7 +13,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FIBFibonacci : NSManagedObject
 
-// Insert code here to declare functionality of your managed object subclass
+/**
+ Fetch a FIBFibonacci with the given n.
+ 
+ @param n - the n value of the fibonacci sequence.
+ @param managedObjectContext - the Context where the fetch should be called.
+ 
+ @return a FIBFibonacci instance.
+ */
++ (instancetype)fetchFibonacciNumberWithN:(NSUInteger)n
+                     managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
 @end
 

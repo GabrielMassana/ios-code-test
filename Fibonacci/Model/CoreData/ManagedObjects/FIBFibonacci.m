@@ -8,8 +8,20 @@
 
 #import "FIBFibonacci.h"
 
+#import <CoreDataFullStack/CoreDataFullStack.h>
+
 @implementation FIBFibonacci
 
-// Insert code here to add functionality to your managed object subclass
++ (instancetype)fetchFibonacciNumberWithN:(NSUInteger)n
+                     managedObjectContext:(NSManagedObjectContext *)managedObjectContext
+{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"n == %@", @(n)];
+    
+    FIBFibonacci *fibonacci = [CDFRetrievalService retrieveFirstEntryForEntityClass:[FIBFibonacci class]
+                                                                          predicate:predicate
+                                                               managedObjectContext:managedObjectContext];
+    
+    return fibonacci;
+}
 
 @end

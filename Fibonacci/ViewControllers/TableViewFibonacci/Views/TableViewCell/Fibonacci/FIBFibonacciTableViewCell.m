@@ -14,7 +14,9 @@
 
 - (void)updateCellWithFibonacci:(FIBFibonacci *)fibonacci
 {
-    
+    //TODO: Update cell and done.
+    NSLog(@"sequence = %llu", fibonacci.sequence.unsignedLongLongValue);
+    NSLog(@"n        = %ld", fibonacci.n.integerValue);
 }
 
 @end
