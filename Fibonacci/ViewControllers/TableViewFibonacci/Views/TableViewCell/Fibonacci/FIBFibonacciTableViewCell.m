@@ -14,7 +14,7 @@
 
 - (void)updateCellWithFibonacci:(FIBFibonacci *)fibonacci
 {
-    self.textLabel.text = [NSString stringWithFormat:@"F(%ld): %llu", fibonacci.n.integerValue, fibonacci.sequence.unsignedLongLongValue];
+    self.textLabel.text = [NSString stringWithFormat:@"F(%@): %llu", fibonacci.n, fibonacci.sequence.unsignedLongLongValue];
 }
 
 @end
