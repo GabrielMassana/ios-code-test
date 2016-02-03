@@ -78,6 +78,15 @@
         _tableView = [UITableView newAutoLayoutView];
         
         _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+        
+        _tableView.contentInset = UIEdgeInsetsMake(20.0f,
+                                                   0.0f,
+                                                   0.0f,
+                                                   0.0f);
+        
+        _tableView.contentOffset = CGPointMake(0.0f,
+                                               -20.0f);
+        
         self.tableView.dataSource = self;
         self.tableView.delegate = self;
     }

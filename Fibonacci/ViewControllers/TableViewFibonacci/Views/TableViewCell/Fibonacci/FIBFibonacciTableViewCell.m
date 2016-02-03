@@ -14,9 +14,7 @@
 
 - (void)updateCellWithFibonacci:(FIBFibonacci *)fibonacci
 {
-    //TODO: Update cell and done.
-    NSLog(@"sequence = %llu", fibonacci.sequence.unsignedLongLongValue);
-    NSLog(@"n        = %ld", fibonacci.n.integerValue);
+    self.textLabel.text = [NSString stringWithFormat:@"F(%ld): %llu", fibonacci.n.integerValue, fibonacci.sequence.unsignedLongLongValue];
 }
 
 @end
