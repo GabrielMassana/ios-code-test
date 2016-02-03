@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ Operation Queue Identifier for local operations.
+ */
 extern NSString *const kFIBLocalOperationQueueTypeIdentifier;
 
 @interface FIBAppDelegate : UIResponder <UIApplicationDelegate>

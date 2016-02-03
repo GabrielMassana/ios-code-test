@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ Main View Controller with a Fibonacci sequence displayed on a Table View.
+ */
 @interface FIBTableViewFibonacciViewController : UIViewController
 
 @end

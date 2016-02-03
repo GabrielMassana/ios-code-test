@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ Abstract Table View Cell with common methods.
+ */
 @interface FIBTableViewCell : UITableViewCell
 
 /**

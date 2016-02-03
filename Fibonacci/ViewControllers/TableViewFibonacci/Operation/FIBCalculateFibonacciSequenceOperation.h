@@ -8,6 +8,9 @@
 
 #import <CoreOperation/CoreOperation.h>
 
+/**
+ Operation to calculate Fibonacci Sequence and store it on Core Data.
+ */
 @interface FIBCalculateFibonacciSequenceOperation : COMOperation
 
 @end

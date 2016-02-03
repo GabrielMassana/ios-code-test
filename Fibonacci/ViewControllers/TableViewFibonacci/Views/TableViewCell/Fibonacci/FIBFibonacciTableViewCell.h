@@ -10,6 +10,9 @@
 
 @class FIBFibonacci;
 
+/**
+ Fibonacci sequence table view cell.
+ */
 @interface FIBFibonacciTableViewCell : FIBTableViewCell
 
 /**
