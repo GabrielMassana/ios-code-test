@@ -7,4 +7,4 @@ before_install:
     - sudo gem install cocoapods -v '0.39.0'   
      
 script: 
-   xctool -project Fibonacci.xcodeproj -scheme Fibonacci build -sdk iphonesimulator
+   xctool -project Fibonacci.xcworkspace -scheme Fibonacci build -sdk iphonesimulator
